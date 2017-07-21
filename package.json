@@ -1,0 +1,15 @@
+{
+    "name": "Clock",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/Aries0d0f/clock.git",
+    "author": "Aries Cs <aries0d0f@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "build": "node-sass ./assets/scss/*.scss -o ./assets/css",
+        "dev": "node-sass -w ./assets/scss/*.scss -o ./assets/css"
+    },
+    "dependencies": {
+        "node-sass": "^4.5.3"
+    }
+}
