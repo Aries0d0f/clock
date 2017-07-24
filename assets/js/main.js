@@ -53,7 +53,7 @@ function num_4(dx) {
     ctx.moveTo(280 + dx, 160)
     ctx.lineTo(40 + dx, 160)
     ctx.arc(160 + dx, 160, 120, 1 * Math.PI, 1.5 * Math.PI)
-    ctx.lineTo(280 + dx, 40)
+    ctx.moveTo(280 + dx, 40)
     ctx.lineTo(40 + dx, 280)
     ctx.stroke()
 }
