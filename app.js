@@ -38,7 +38,7 @@ function Particale(x, y, radius, color) {
   this.color = color
   this.radians = Math.random() * Math.PI * 2
   this.velocity = 0.005 + (Math.random() * 0.02)
-  this.distance = randomIntFromRange(300, 480)
+  this.distance = randomIntFromRange(500, 680)
 
 	this.update = () => {
     const lastPoint = {x: this.x, y: this.y}
@@ -71,9 +71,9 @@ function clock(hour, min, sec) {
     c.stroke()
     c.closePath()
   }
-  draw(hour / 12, 300, '#FFFFFF')
-  draw(min / 60, 490, '#888888')
-  draw(sec / 60, 500, '#FABD40')
+  draw(hour / 12, 480, '#FFFFFF')
+  draw(min / 60, 700, '#888888')
+  draw(sec / 60, 750, '#FABD40')
 }
 
 
