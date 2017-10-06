@@ -106,7 +106,7 @@ function animate() {
 function getTime() {
   this.sec = new Date().getSeconds() + (new Date().getMilliseconds() / 1000)
   this.min = new Date().getMinutes() + (sec / 60)
-  this.hour = new Date().getHours() % 12 || 12 + (min / 60)
+  this.hour = (new Date().getHours() % 12 || 12) + (min / 60)
   console.log(hour, min, sec)
   clock(hour, min, sec)
 }
